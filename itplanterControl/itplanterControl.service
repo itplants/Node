@@ -1,0 +1,14 @@
+[Unit]
+Decription=The itplanter controller 
+
+[Service]
+Type=simple
+Environment=LANG=C
+ExecStart=/home/pi/Node/itplanterControl/itplanterControl.js
+ExecStop=/bin/kill -WINCH ${MAINPID}
+KillSignal=SIGINT
+PrivateTmp=true
+Restart = always
+
+[Install]
+WantedBy=multi-user.target

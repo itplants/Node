@@ -1,0 +1,860 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'system' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose cache add [ 'system', null ]
+5 verbose cache add name=undefined spec="system" args=["system",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'system',
+6 verbose parsed url   path: 'system',
+6 verbose parsed url   href: 'system' }
+7 silly lockFile 317f1e76-system system
+8 verbose lock system /home/pi/.npm/317f1e76-system.lock
+9 silly lockFile 317f1e76-system system
+10 silly lockFile 317f1e76-system system
+11 verbose addNamed [ 'system', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 29b1c38a-system system@
+14 verbose lock system@ /home/pi/.npm/29b1c38a-system.lock
+15 silly addNameRange { name: 'system', range: '*', hasData: false }
+16 verbose request where is /system
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 880dc572fe7d8a92
+19 verbose url raw /system
+20 verbose url resolving [ 'https://registry.npmjs.org/', './system' ]
+21 verbose url resolved https://registry.npmjs.org/system
+22 verbose request where is https://registry.npmjs.org/system
+23 info trying registry request attempt 1 at 07:12:19
+24 http GET https://registry.npmjs.org/system
+25 http 200 https://registry.npmjs.org/system
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"BF2IPAS70RMQQ6RSUM97T5FII"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=300',
+26 silly registry.get     'content-length': '14629',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Mon, 28 Dec 2015 22:12:20 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-nrt6132-NRT',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1451340739.863063,VS0,VE917',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'system', range: '*', hasData: true }
+28 silly addNameRange versions [ 'system',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.4' ] ]
+29 verbose addNamed [ 'system', '1.0.4' ]
+30 verbose addNamed [ '1.0.4', '1.0.4' ]
+31 silly lockFile 86aaf141-system-1-0-4 system@1.0.4
+32 verbose lock system@1.0.4 /home/pi/.npm/86aaf141-system-1-0-4.lock
+33 silly lockFile 6723eee7-pmjs-org-system-system-1-0-4-tgz https://registry.npmjs.org/system/-/system-1.0.4.tgz
+34 verbose lock https://registry.npmjs.org/system/-/system-1.0.4.tgz /home/pi/.npm/6723eee7-pmjs-org-system-system-1-0-4-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/system/-/system-1.0.4.tgz',
+35 verbose addRemoteTarball   'd849e8148f7845676db285efc4fe14860d88d38c' ]
+36 info retry fetch attempt 1 at 07:12:20
+37 verbose fetch to= /tmp/npm-8859-MdSS_idq/registry.npmjs.org/system/-/system-1.0.4.tgz
+38 http GET https://registry.npmjs.org/system/-/system-1.0.4.tgz
+39 http 200 https://registry.npmjs.org/system/-/system-1.0.4.tgz
+40 silly lockFile 6723eee7-pmjs-org-system-system-1-0-4-tgz https://registry.npmjs.org/system/-/system-1.0.4.tgz
+41 silly lockFile 6723eee7-pmjs-org-system-system-1-0-4-tgz https://registry.npmjs.org/system/-/system-1.0.4.tgz
+42 silly lockFile 86aaf141-system-1-0-4 system@1.0.4
+43 silly lockFile 86aaf141-system-1-0-4 system@1.0.4
+44 silly lockFile 29b1c38a-system system@
+45 silly lockFile 29b1c38a-system system@
+46 silly resolved [ { name: 'system',
+46 silly resolved     version: '1.0.4',
+46 silly resolved     author: { name: 'Kris Kowal', email: 'kris@cixar.com' },
+46 silly resolved     description: 'Flexible module and resource system',
+46 silly resolved     license: 'BSD 3-Clause',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+ssh://git@github.com/gutentags/system.git' },
+46 silly resolved     keywords: [ 'module', 'resource', 'system', 'commonjs', 'npm' ],
+46 silly resolved     bugs: { url: 'https://github.com/gutentags/system/issues' },
+46 silly resolved     homepage: 'https://github.com/gutentags/system#readme',
+46 silly resolved     main: './system.js',
+46 silly resolved     bin: { bundle: './bundle.js' },
+46 silly resolved     browser:
+46 silly resolved      { './url.js': './browser-url.js',
+46 silly resolved        './system.js': './browser-system.js' },
+46 silly resolved     dependencies: { q: '^2.0.3' },
+46 silly resolved     devDependencies: { 'q-io': '^2.0.6' },
+46 silly resolved     scripts:
+46 silly resolved      { test: 'node test',
+46 silly resolved        build: 'node bundle.js boot-entry.js > boot.js' },
+46 silly resolved     gitHead: '1722061b54a15686b0199502e693b2f37d58b28d',
+46 silly resolved     _id: 'system@1.0.4',
+46 silly resolved     _shasum: 'd849e8148f7845676db285efc4fe14860d88d38c',
+46 silly resolved     _from: 'system@',
+46 silly resolved     _npmVersion: '2.8.3',
+46 silly resolved     _nodeVersion: '1.8.1',
+46 silly resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'd849e8148f7845676db285efc4fe14860d88d38c',
+46 silly resolved        tarball: 'http://registry.npmjs.org/system/-/system-1.0.4.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/system/-/system-1.0.4.tgz' } ]
+47 info install system@1.0.4 into /home/pi/Node
+48 info installOne system@1.0.4
+49 verbose node_modules/system unbuild
+50 verbose tar unpack /home/pi/.npm/system/1.0.4/package.tgz
+51 silly lockFile eb472bb6-home-pi-Node-node-modules-system tar:///home/pi/Node/node_modules/system
+52 verbose lock tar:///home/pi/Node/node_modules/system /home/pi/.npm/eb472bb6-home-pi-Node-node-modules-system.lock
+53 silly lockFile f1fb19d6--pi-npm-system-1-0-4-package-tgz tar:///home/pi/.npm/system/1.0.4/package.tgz
+54 verbose lock tar:///home/pi/.npm/system/1.0.4/package.tgz /home/pi/.npm/f1fb19d6--pi-npm-system-1-0-4-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry .npmignore
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm extractEntry boot.js
+60 silly gunzTarPerm extractEntry browser-system.js
+61 silly gunzTarPerm extractEntry browser-url.js
+62 silly gunzTarPerm extractEntry boilerplate.js
+63 silly gunzTarPerm extractEntry common-system.js
+64 silly gunzTarPerm extractEntry browser-location.js
+65 silly gunzTarPerm extractEntry identifier.js
+66 silly gunzTarPerm extractEntry location.js
+67 silly gunzTarPerm extractEntry module.js
+68 silly gunzTarPerm extractEntry script-params.js
+69 silly gunzTarPerm extractEntry url.js
+70 silly gunzTarPerm extractEntry boot-entry.js
+71 silly gunzTarPerm extractEntry parse-dependencies.js
+72 silly gunzTarPerm extractEntry system.js
+73 silly gunzTarPerm extractEntry resource.js
+74 silly gunzTarPerm extractEntry bundle.js
+75 silly gunzTarPerm extractEntry compile.js
+76 silly gunzTarPerm extractEntry LICENSE.md
+77 silly gunzTarPerm extractEntry test/README.md
+78 silly gunzTarPerm extractEntry test/identifier-test.js
+79 silly gunzTarPerm extractEntry test/index.js
+80 silly gunzTarPerm extractEntry test/compiler/package.json
+81 silly gunzTarPerm extractEntry test/compiler/program.js
+82 silly gunzTarPerm extractEntry test/compiler/text-compiler.js
+83 silly gunzTarPerm extractEntry test/compiler/hello.text
+84 silly gunzTarPerm extractEntry test/compiler-package/package.json
+85 silly gunzTarPerm extractEntry test/compiler-package/program.js
+86 silly gunzTarPerm extractEntry test/compiler-package/hello.text
+87 silly gunzTarPerm extractEntry test/cyclic/package.json
+88 silly gunzTarPerm extractEntry test/cyclic/a.js
+89 silly gunzTarPerm extractEntry test/cyclic/b.js
+90 silly gunzTarPerm extractEntry test/cyclic/program.js
+91 silly gunzTarPerm extractEntry test/determinism/package.json
+92 silly gunzTarPerm extractEntry test/determinism/program.js
+93 silly gunzTarPerm extractEntry test/determinism/submodule/a.js
+94 silly gunzTarPerm extractEntry test/dev-dependencies/package.json
+95 silly gunzTarPerm extractEntry test/dev-dependencies/program.js
+96 silly gunzTarPerm extractEntry test/exact-exports/package.json
+97 silly gunzTarPerm extractEntry test/exact-exports/a.js
+98 silly gunzTarPerm extractEntry test/exact-exports/program.js
+99 silly gunzTarPerm extractEntry test/hasOwnProperty/package.json
+100 silly gunzTarPerm extractEntry test/hasOwnProperty/hasOwnProperty.js
+101 silly gunzTarPerm extractEntry test/hasOwnProperty/program.js
+102 silly gunzTarPerm extractEntry test/hasOwnProperty/toString.js
+103 silly gunzTarPerm extractEntry test/translator-package/package.json
+104 silly gunzTarPerm extractEntry test/translator-package/program.js
+105 silly gunzTarPerm extractEntry test/translator-package/test.js
+106 silly gunzTarPerm extractEntry test/translator-package/hello.text
+107 silly gunzTarPerm extractEntry test/comments/package.json
+108 silly gunzTarPerm extractEntry test/comments/program.js
+109 silly gunzTarPerm extractEntry test/json/package.json
+110 silly gunzTarPerm extractEntry test/json/program.js
+111 silly gunzTarPerm extractEntry test/load-package/package.json
+112 silly gunzTarPerm extractEntry test/load-package/program.js
+113 silly gunzTarPerm extractEntry test/load-package/a/package.json
+114 silly gunzTarPerm extractEntry test/load-package/a/a.js
+115 silly gunzTarPerm extractEntry test/case-sensitive/package.json
+116 silly gunzTarPerm extractEntry test/case-sensitive/a.js
+117 silly gunzTarPerm extractEntry test/case-sensitive/program.js
+118 silly gunzTarPerm extractEntry test/main/package.json
+119 silly gunzTarPerm extractEntry test/main/program.js
+120 silly gunzTarPerm extractEntry test/main-name/package.json
+121 silly gunzTarPerm extractEntry test/main-name/program.js
+122 silly gunzTarPerm extractEntry test/method/package.json
+123 silly gunzTarPerm extractEntry test/method/a.js
+124 silly gunzTarPerm extractEntry test/method/program.js
+125 silly gunzTarPerm extractEntry test/missing/package.json
+126 silly gunzTarPerm extractEntry test/missing/program.js
+127 silly gunzTarPerm extractEntry test/module-exports/package.json
+128 silly gunzTarPerm extractEntry test/module-exports/module-exports.js
+129 silly gunzTarPerm extractEntry test/module-exports/program.js
+130 silly gunzTarPerm extractEntry test/monkeys/package.json
+131 silly gunzTarPerm extractEntry test/monkeys/a.js
+132 silly gunzTarPerm extractEntry test/monkeys/program.js
+133 silly gunzTarPerm extractEntry test/nested/package.json
+134 silly gunzTarPerm extractEntry test/nested/program.js
+135 silly gunzTarPerm extractEntry test/nested/a/b/c/d.js
+136 silly gunzTarPerm extractEntry test/not-found/package.json
+137 silly gunzTarPerm extractEntry test/not-found/program.js
+138 silly gunzTarPerm extractEntry test/redirect-patterns/package.json
+139 silly gunzTarPerm extractEntry test/redirect-patterns/foo-bar.js
+140 silly gunzTarPerm extractEntry test/redirect-patterns/program.js
+141 silly gunzTarPerm extractEntry test/redirects/package.json
+142 silly gunzTarPerm extractEntry test/redirects/barz.js
+143 silly gunzTarPerm extractEntry test/redirects/program.js
+144 silly gunzTarPerm extractEntry test/relative/package.json
+145 silly gunzTarPerm extractEntry test/relative/program.js
+146 silly gunzTarPerm extractEntry test/relative/submodule/a.js
+147 silly gunzTarPerm extractEntry test/relative/submodule/b.js
+148 silly gunzTarPerm extractEntry test/transitive/package.json
+149 silly gunzTarPerm extractEntry test/transitive/a.js
+150 silly gunzTarPerm extractEntry test/transitive/b.js
+151 silly gunzTarPerm extractEntry test/transitive/c.js
+152 silly gunzTarPerm extractEntry test/transitive/program.js
+153 silly gunzTarPerm extractEntry test/translator/package.json
+154 silly gunzTarPerm extractEntry test/translator/program.js
+155 silly gunzTarPerm extractEntry test/translator/translate-text.js
+156 silly gunzTarPerm extractEntry test/translator/hello.text
+157 silly gunzTarPerm extractEntry test/load-package-name/package.json
+158 silly gunzTarPerm extractEntry test/load-package-name/program.js
+159 silly lockFile eb472bb6-home-pi-Node-node-modules-system tar:///home/pi/Node/node_modules/system
+160 silly lockFile eb472bb6-home-pi-Node-node-modules-system tar:///home/pi/Node/node_modules/system
+161 silly lockFile f1fb19d6--pi-npm-system-1-0-4-package-tgz tar:///home/pi/.npm/system/1.0.4/package.tgz
+162 silly lockFile f1fb19d6--pi-npm-system-1-0-4-package-tgz tar:///home/pi/.npm/system/1.0.4/package.tgz
+163 info preinstall system@1.0.4
+164 verbose readDependencies using package.json deps
+165 verbose readDependencies using package.json deps
+166 verbose cache add [ 'q@^2.0.3', null ]
+167 verbose cache add name=undefined spec="q@^2.0.3" args=["q@^2.0.3",null]
+168 verbose parsed url { protocol: null,
+168 verbose parsed url   slashes: null,
+168 verbose parsed url   auth: null,
+168 verbose parsed url   host: null,
+168 verbose parsed url   port: null,
+168 verbose parsed url   hostname: null,
+168 verbose parsed url   hash: null,
+168 verbose parsed url   search: null,
+168 verbose parsed url   query: null,
+168 verbose parsed url   pathname: 'q@^2.0.3',
+168 verbose parsed url   path: 'q@^2.0.3',
+168 verbose parsed url   href: 'q@^2.0.3' }
+169 verbose cache add name="q" spec="^2.0.3" args=["q","^2.0.3"]
+170 verbose parsed url { protocol: null,
+170 verbose parsed url   slashes: null,
+170 verbose parsed url   auth: null,
+170 verbose parsed url   host: null,
+170 verbose parsed url   port: null,
+170 verbose parsed url   hostname: null,
+170 verbose parsed url   hash: null,
+170 verbose parsed url   search: null,
+170 verbose parsed url   query: null,
+170 verbose parsed url   pathname: '^2.0.3',
+170 verbose parsed url   path: '^2.0.3',
+170 verbose parsed url   href: '^2.0.3' }
+171 verbose addNamed [ 'q', '^2.0.3' ]
+172 verbose addNamed [ null, '>=2.0.3-0 <3.0.0-0' ]
+173 silly lockFile f6244c38-q-2-0-3 q@^2.0.3
+174 verbose lock q@^2.0.3 /home/pi/.npm/f6244c38-q-2-0-3.lock
+175 silly addNameRange { name: 'q', range: '>=2.0.3-0 <3.0.0-0', hasData: false }
+176 verbose request where is /q
+177 verbose request registry https://registry.npmjs.org/
+178 verbose url raw /q
+179 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+180 verbose url resolved https://registry.npmjs.org/q
+181 verbose request where is https://registry.npmjs.org/q
+182 info trying registry request attempt 1 at 07:12:23
+183 verbose etag "DFPNDMWXM9J7WW5XIG1J0E84O"
+184 http GET https://registry.npmjs.org/q
+185 http 200 https://registry.npmjs.org/q
+186 silly registry.get cb [ 200,
+186 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+186 silly registry.get     etag: '"39FYTJMTDIBJ2FSS5WYF5R838"',
+186 silly registry.get     'content-type': 'application/json',
+186 silly registry.get     'cache-control': 'max-age=300',
+186 silly registry.get     'content-length': '144088',
+186 silly registry.get     'accept-ranges': 'bytes',
+186 silly registry.get     date: 'Mon, 28 Dec 2015 22:12:24 GMT',
+186 silly registry.get     via: '1.1 varnish',
+186 silly registry.get     age: '0',
+186 silly registry.get     connection: 'keep-alive',
+186 silly registry.get     'x-served-by': 'cache-nrt6125-NRT',
+186 silly registry.get     'x-cache': 'HIT',
+186 silly registry.get     'x-cache-hits': '1',
+186 silly registry.get     'x-timer': 'S1451340743.638184,VS0,VE758',
+186 silly registry.get     vary: 'Accept' } ]
+187 silly addNameRange number 2 { name: 'q', range: '>=2.0.3-0 <3.0.0-0', hasData: true }
+188 silly addNameRange versions [ 'q',
+188 silly addNameRange   [ '0.0.0',
+188 silly addNameRange     '0.0.1',
+188 silly addNameRange     '0.0.2',
+188 silly addNameRange     '0.0.3',
+188 silly addNameRange     '0.1.0',
+188 silly addNameRange     '0.1.1',
+188 silly addNameRange     '0.1.2',
+188 silly addNameRange     '0.1.3',
+188 silly addNameRange     '0.1.4',
+188 silly addNameRange     '0.1.5',
+188 silly addNameRange     '0.1.6',
+188 silly addNameRange     '0.1.7',
+188 silly addNameRange     '0.1.8',
+188 silly addNameRange     '0.1.9',
+188 silly addNameRange     '0.2.0-rc1',
+188 silly addNameRange     '0.2.0',
+188 silly addNameRange     '0.2.1',
+188 silly addNameRange     '0.2.2',
+188 silly addNameRange     '0.2.3',
+188 silly addNameRange     '0.2.4',
+188 silly addNameRange     '0.2.5',
+188 silly addNameRange     '0.2.6',
+188 silly addNameRange     '0.2.7',
+188 silly addNameRange     '0.2.8',
+188 silly addNameRange     '0.2.9',
+188 silly addNameRange     '0.3.0',
+188 silly addNameRange     '0.2.10',
+188 silly addNameRange     '0.4.0',
+188 silly addNameRange     '0.4.1',
+188 silly addNameRange     '0.4.2',
+188 silly addNameRange     '0.4.4',
+188 silly addNameRange     '0.5.0',
+188 silly addNameRange     '0.5.1',
+188 silly addNameRange     '0.5.2',
+188 silly addNameRange     '0.5.3',
+188 silly addNameRange     '0.6.0',
+188 silly addNameRange     '0.7.0',
+188 silly addNameRange     '0.7.1',
+188 silly addNameRange     '0.7.2',
+188 silly addNameRange     '0.8.0',
+188 silly addNameRange     '0.8.1',
+188 silly addNameRange     '0.8.2',
+188 silly addNameRange     '0.8.3',
+188 silly addNameRange     '0.8.4',
+188 silly addNameRange     '0.8.5',
+188 silly addNameRange     '0.8.6',
+188 silly addNameRange     '0.8.7',
+188 silly addNameRange     '0.8.8',
+188 silly addNameRange     '0.8.9',
+188 silly addNameRange     '0.8.10',
+188 silly addNameRange     '0.8.11',
+188 silly addNameRange     '0.8.12',
+188 silly addNameRange     '0.9.0',
+188 silly addNameRange     '0.9.1',
+188 silly addNameRange     '0.9.2',
+188 silly addNameRange     '0.9.3',
+188 silly addNameRange     '0.9.4',
+188 silly addNameRange     '0.9.5',
+188 silly addNameRange     '0.9.6',
+188 silly addNameRange     '0.9.7',
+188 silly addNameRange     '1.0.0',
+188 silly addNameRange     '1.0.1',
+188 silly addNameRange     '2.0.0',
+188 silly addNameRange     '2.0.1',
+188 silly addNameRange     '2.0.2',
+188 silly addNameRange     '1.1.0',
+188 silly addNameRange     '1.1.1',
+188 silly addNameRange     '1.1.2',
+188 silly addNameRange     '2.0.3',
+188 silly addNameRange     '1.2.0',
+188 silly addNameRange     '1.2.1',
+188 silly addNameRange     '1.3.0',
+188 silly addNameRange     '1.4.0',
+188 silly addNameRange     '1.4.1' ] ]
+189 verbose addNamed [ 'q', '2.0.3' ]
+190 verbose addNamed [ '2.0.3', '2.0.3' ]
+191 silly lockFile 638983d8-q-2-0-3 q@2.0.3
+192 verbose lock q@2.0.3 /home/pi/.npm/638983d8-q-2-0-3.lock
+193 silly lockFile d64d8847-registry-npmjs-org-q-q-2-0-3-tgz https://registry.npmjs.org/q/-/q-2.0.3.tgz
+194 verbose lock https://registry.npmjs.org/q/-/q-2.0.3.tgz /home/pi/.npm/d64d8847-registry-npmjs-org-q-q-2-0-3-tgz.lock
+195 verbose addRemoteTarball [ 'https://registry.npmjs.org/q/-/q-2.0.3.tgz',
+195 verbose addRemoteTarball   '75b8db0255a1a5af82f58c3f3aaa1efec7d0d134' ]
+196 info retry fetch attempt 1 at 07:12:24
+197 verbose fetch to= /tmp/npm-8859-MdSS_idq/registry.npmjs.org/q/-/q-2.0.3.tgz
+198 http GET https://registry.npmjs.org/q/-/q-2.0.3.tgz
+199 http 200 https://registry.npmjs.org/q/-/q-2.0.3.tgz
+200 silly lockFile d64d8847-registry-npmjs-org-q-q-2-0-3-tgz https://registry.npmjs.org/q/-/q-2.0.3.tgz
+201 silly lockFile d64d8847-registry-npmjs-org-q-q-2-0-3-tgz https://registry.npmjs.org/q/-/q-2.0.3.tgz
+202 silly lockFile 638983d8-q-2-0-3 q@2.0.3
+203 silly lockFile 638983d8-q-2-0-3 q@2.0.3
+204 silly lockFile f6244c38-q-2-0-3 q@^2.0.3
+205 silly lockFile f6244c38-q-2-0-3 q@^2.0.3
+206 silly resolved [ { name: 'q',
+206 silly resolved     version: '2.0.3',
+206 silly resolved     publishConfig: { tag: 'future' },
+206 silly resolved     description: 'A library for promises (CommonJS/Promises/A,B,D)',
+206 silly resolved     homepage: 'https://github.com/kriskowal/q',
+206 silly resolved     author:
+206 silly resolved      { name: 'Kris Kowal',
+206 silly resolved        email: 'kris@cixar.com',
+206 silly resolved        url: 'https://github.com/kriskowal' },
+206 silly resolved     keywords:
+206 silly resolved      [ 'q',
+206 silly resolved        'promise',
+206 silly resolved        'promises',
+206 silly resolved        'promises-a',
+206 silly resolved        'promises-aplus',
+206 silly resolved        'deferred',
+206 silly resolved        'future',
+206 silly resolved        'async',
+206 silly resolved        'flow control',
+206 silly resolved        'fluent',
+206 silly resolved        'browser',
+206 silly resolved        'node' ],
+206 silly resolved     contributors: [ [Object], [Object], [Object] ],
+206 silly resolved     credits: [ 'Mark Miller <erights@google.com>', 'Tyler Close' ],
+206 silly resolved     license:
+206 silly resolved      { type: 'MIT',
+206 silly resolved        url: 'http://github.com/kriskowal/q/raw/master/LICENSE' },
+206 silly resolved     repository: { type: 'git', url: 'git://github.com/kriskowal/q.git' },
+206 silly resolved     main: 'q.js',
+206 silly resolved     dependencies: { asap: '^2.0.0', 'pop-iterate': '^1.0.1', 'weak-map': '^1.0.5' },
+206 silly resolved     devDependencies:
+206 silly resolved      { jshint: '^2.4.4',
+206 silly resolved        jasminum: '>=2.0.5 <3.0.0',
+206 silly resolved        opener: '^1.3.0',
+206 silly resolved        'promises-aplus-tests': '^1.0.2',
+206 silly resolved        istanbul: '^0.2.4',
+206 silly resolved        matcha: '^0.2.0',
+206 silly resolved        grunt: '^0.4.1',
+206 silly resolved        'grunt-cli': '^0.1.9',
+206 silly resolved        'grunt-contrib-uglify': '^0.2.2',
+206 silly resolved        'grunt-contrib-clean': '^0.5.0',
+206 silly resolved        'grunt-global-wrap': '^1.1.0',
+206 silly resolved        'grunt-amd-wrap': '^1.0.0',
+206 silly resolved        'grunt-s3': '^0.2.0-alpha.2' },
+206 silly resolved     scripts:
+206 silly resolved      { lint: 'jshint q.js',
+206 silly resolved        test: 'npm run lint && jasminum test && npm run test:phantom && promises-aplus-tests test/aplus-adapter',
+206 silly resolved        'test:phantom': 'jasminum-phantom test',
+206 silly resolved        cover: 'istanbul cover test/index.js && istanbul report html && opener coverage/index.html',
+206 silly resolved        release: 'grunt release',
+206 silly resolved        benchmark: 'matcha' },
+206 silly resolved     files: [ 'LICENSE', 'q.js', 'queue.js' ],
+206 silly resolved     overlay: { teleport: [Object] },
+206 silly resolved     volo: { url: 'http://q-releases.s3-website-us-west-1.amazonaws.com/{version}/amd/q.js' },
+206 silly resolved     gitHead: 'e20c370c1ccf317782ac69de151a8e80fba1beb1',
+206 silly resolved     bugs: { url: 'https://github.com/kriskowal/q/issues' },
+206 silly resolved     _id: 'q@2.0.3',
+206 silly resolved     _shasum: '75b8db0255a1a5af82f58c3f3aaa1efec7d0d134',
+206 silly resolved     _from: 'q@^2.0.3',
+206 silly resolved     _npmVersion: '1.4.21',
+206 silly resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+206 silly resolved     maintainers: [ [Object], [Object] ],
+206 silly resolved     dist:
+206 silly resolved      { shasum: '75b8db0255a1a5af82f58c3f3aaa1efec7d0d134',
+206 silly resolved        tarball: 'http://registry.npmjs.org/q/-/q-2.0.3.tgz' },
+206 silly resolved     directories: {},
+206 silly resolved     _resolved: 'https://registry.npmjs.org/q/-/q-2.0.3.tgz' } ]
+207 info install q@2.0.3 into /home/pi/Node/node_modules/system
+208 info installOne q@2.0.3
+209 verbose node_modules/system/node_modules/q unbuild
+210 verbose tar unpack /home/pi/.npm/q/2.0.3/package.tgz
+211 silly lockFile 44239150-de-modules-system-node-modules-q tar:///home/pi/Node/node_modules/system/node_modules/q
+212 verbose lock tar:///home/pi/Node/node_modules/system/node_modules/q /home/pi/.npm/44239150-de-modules-system-node-modules-q.lock
+213 silly lockFile e11417c5--home-pi-npm-q-2-0-3-package-tgz tar:///home/pi/.npm/q/2.0.3/package.tgz
+214 verbose lock tar:///home/pi/.npm/q/2.0.3/package.tgz /home/pi/.npm/e11417c5--home-pi-npm-q-2-0-3-package-tgz.lock
+215 silly gunzTarPerm modes [ '755', '644' ]
+216 silly gunzTarPerm extractEntry package.json
+217 silly gunzTarPerm extractEntry README.md
+218 silly gunzTarPerm extractEntry LICENSE
+219 silly gunzTarPerm extractEntry q.js
+220 silly gunzTarPerm extractEntry queue.js
+221 silly lockFile 44239150-de-modules-system-node-modules-q tar:///home/pi/Node/node_modules/system/node_modules/q
+222 silly lockFile 44239150-de-modules-system-node-modules-q tar:///home/pi/Node/node_modules/system/node_modules/q
+223 silly lockFile e11417c5--home-pi-npm-q-2-0-3-package-tgz tar:///home/pi/.npm/q/2.0.3/package.tgz
+224 silly lockFile e11417c5--home-pi-npm-q-2-0-3-package-tgz tar:///home/pi/.npm/q/2.0.3/package.tgz
+225 info preinstall q@2.0.3
+226 verbose readDependencies using package.json deps
+227 verbose readDependencies using package.json deps
+228 verbose cache add [ 'asap@^2.0.0', null ]
+229 verbose cache add name=undefined spec="asap@^2.0.0" args=["asap@^2.0.0",null]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: 'asap@^2.0.0',
+230 verbose parsed url   path: 'asap@^2.0.0',
+230 verbose parsed url   href: 'asap@^2.0.0' }
+231 verbose cache add [ 'pop-iterate@^1.0.1', null ]
+232 verbose cache add name=undefined spec="pop-iterate@^1.0.1" args=["pop-iterate@^1.0.1",null]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: 'pop-iterate@^1.0.1',
+233 verbose parsed url   path: 'pop-iterate@^1.0.1',
+233 verbose parsed url   href: 'pop-iterate@^1.0.1' }
+234 verbose cache add [ 'weak-map@^1.0.5', null ]
+235 verbose cache add name=undefined spec="weak-map@^1.0.5" args=["weak-map@^1.0.5",null]
+236 verbose parsed url { protocol: null,
+236 verbose parsed url   slashes: null,
+236 verbose parsed url   auth: null,
+236 verbose parsed url   host: null,
+236 verbose parsed url   port: null,
+236 verbose parsed url   hostname: null,
+236 verbose parsed url   hash: null,
+236 verbose parsed url   search: null,
+236 verbose parsed url   query: null,
+236 verbose parsed url   pathname: 'weak-map@^1.0.5',
+236 verbose parsed url   path: 'weak-map@^1.0.5',
+236 verbose parsed url   href: 'weak-map@^1.0.5' }
+237 verbose cache add name="asap" spec="^2.0.0" args=["asap","^2.0.0"]
+238 verbose parsed url { protocol: null,
+238 verbose parsed url   slashes: null,
+238 verbose parsed url   auth: null,
+238 verbose parsed url   host: null,
+238 verbose parsed url   port: null,
+238 verbose parsed url   hostname: null,
+238 verbose parsed url   hash: null,
+238 verbose parsed url   search: null,
+238 verbose parsed url   query: null,
+238 verbose parsed url   pathname: '^2.0.0',
+238 verbose parsed url   path: '^2.0.0',
+238 verbose parsed url   href: '^2.0.0' }
+239 verbose addNamed [ 'asap', '^2.0.0' ]
+240 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+241 silly lockFile ca1d64b2-asap-2-0-0 asap@^2.0.0
+242 verbose lock asap@^2.0.0 /home/pi/.npm/ca1d64b2-asap-2-0-0.lock
+243 verbose cache add name="pop-iterate" spec="^1.0.1" args=["pop-iterate","^1.0.1"]
+244 verbose parsed url { protocol: null,
+244 verbose parsed url   slashes: null,
+244 verbose parsed url   auth: null,
+244 verbose parsed url   host: null,
+244 verbose parsed url   port: null,
+244 verbose parsed url   hostname: null,
+244 verbose parsed url   hash: null,
+244 verbose parsed url   search: null,
+244 verbose parsed url   query: null,
+244 verbose parsed url   pathname: '^1.0.1',
+244 verbose parsed url   path: '^1.0.1',
+244 verbose parsed url   href: '^1.0.1' }
+245 verbose addNamed [ 'pop-iterate', '^1.0.1' ]
+246 verbose addNamed [ null, '>=1.0.1-0 <2.0.0-0' ]
+247 silly lockFile 2d58c9a8-pop-iterate-1-0-1 pop-iterate@^1.0.1
+248 verbose lock pop-iterate@^1.0.1 /home/pi/.npm/2d58c9a8-pop-iterate-1-0-1.lock
+249 verbose cache add name="weak-map" spec="^1.0.5" args=["weak-map","^1.0.5"]
+250 verbose parsed url { protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: null,
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: '^1.0.5',
+250 verbose parsed url   path: '^1.0.5',
+250 verbose parsed url   href: '^1.0.5' }
+251 verbose addNamed [ 'weak-map', '^1.0.5' ]
+252 verbose addNamed [ null, '>=1.0.5-0 <2.0.0-0' ]
+253 silly lockFile 0375db01-weak-map-1-0-5 weak-map@^1.0.5
+254 verbose lock weak-map@^1.0.5 /home/pi/.npm/0375db01-weak-map-1-0-5.lock
+255 silly addNameRange { name: 'asap', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+256 silly addNameRange { name: 'pop-iterate',
+256 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+256 silly addNameRange   hasData: false }
+257 silly addNameRange { name: 'weak-map', range: '>=1.0.5-0 <2.0.0-0', hasData: false }
+258 verbose request where is /pop-iterate
+259 verbose request registry https://registry.npmjs.org/
+260 verbose url raw /pop-iterate
+261 verbose url resolving [ 'https://registry.npmjs.org/', './pop-iterate' ]
+262 verbose url resolved https://registry.npmjs.org/pop-iterate
+263 verbose request where is https://registry.npmjs.org/pop-iterate
+264 info trying registry request attempt 1 at 07:12:26
+265 http GET https://registry.npmjs.org/pop-iterate
+266 verbose request where is /weak-map
+267 verbose request registry https://registry.npmjs.org/
+268 verbose url raw /weak-map
+269 verbose url resolving [ 'https://registry.npmjs.org/', './weak-map' ]
+270 verbose url resolved https://registry.npmjs.org/weak-map
+271 verbose request where is https://registry.npmjs.org/weak-map
+272 info trying registry request attempt 1 at 07:12:26
+273 http GET https://registry.npmjs.org/weak-map
+274 verbose request where is /asap
+275 verbose request registry https://registry.npmjs.org/
+276 verbose url raw /asap
+277 verbose url resolving [ 'https://registry.npmjs.org/', './asap' ]
+278 verbose url resolved https://registry.npmjs.org/asap
+279 verbose request where is https://registry.npmjs.org/asap
+280 info trying registry request attempt 1 at 07:12:26
+281 verbose etag "B8QI8SIDHZJ6VZ1TW0DI81OI5"
+282 http GET https://registry.npmjs.org/asap
+283 http 200 https://registry.npmjs.org/pop-iterate
+284 silly registry.get cb [ 200,
+284 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+284 silly registry.get     etag: '"3M2CL1938VEQ1O561QCORYDGE"',
+284 silly registry.get     'content-type': 'application/json',
+284 silly registry.get     'cache-control': 'max-age=300',
+284 silly registry.get     'content-length': '5936',
+284 silly registry.get     'accept-ranges': 'bytes',
+284 silly registry.get     date: 'Mon, 28 Dec 2015 22:12:26 GMT',
+284 silly registry.get     via: '1.1 varnish',
+284 silly registry.get     age: '0',
+284 silly registry.get     connection: 'keep-alive',
+284 silly registry.get     'x-served-by': 'cache-nrt6126-NRT',
+284 silly registry.get     'x-cache': 'MISS',
+284 silly registry.get     'x-cache-hits': '0',
+284 silly registry.get     'x-timer': 'S1451340746.354964,VS0,VE526',
+284 silly registry.get     vary: 'Accept' } ]
+285 http 200 https://registry.npmjs.org/weak-map
+286 silly registry.get cb [ 200,
+286 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+286 silly registry.get     etag: '"74UD2JWT73EOEYXBUQ9QJHM3"',
+286 silly registry.get     'content-type': 'application/json',
+286 silly registry.get     'cache-control': 'max-age=300',
+286 silly registry.get     'content-length': '12413',
+286 silly registry.get     'accept-ranges': 'bytes',
+286 silly registry.get     date: 'Mon, 28 Dec 2015 22:12:26 GMT',
+286 silly registry.get     via: '1.1 varnish',
+286 silly registry.get     age: '0',
+286 silly registry.get     connection: 'keep-alive',
+286 silly registry.get     'x-served-by': 'cache-nrt6132-NRT',
+286 silly registry.get     'x-cache': 'HIT',
+286 silly registry.get     'x-cache-hits': '1',
+286 silly registry.get     'x-timer': 'S1451340746.358745,VS0,VE528',
+286 silly registry.get     vary: 'Accept' } ]
+287 silly addNameRange number 2 { name: 'pop-iterate',
+287 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+287 silly addNameRange   hasData: true }
+288 silly addNameRange versions [ 'pop-iterate', [ '1.0.0', '1.0.1' ] ]
+289 verbose addNamed [ 'pop-iterate', '1.0.1' ]
+290 verbose addNamed [ '1.0.1', '1.0.1' ]
+291 silly lockFile 3f1f1063-pop-iterate-1-0-1 pop-iterate@1.0.1
+292 verbose lock pop-iterate@1.0.1 /home/pi/.npm/3f1f1063-pop-iterate-1-0-1.lock
+293 silly addNameRange number 2 { name: 'weak-map', range: '>=1.0.5-0 <2.0.0-0', hasData: true }
+294 silly addNameRange versions [ 'weak-map',
+294 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+295 verbose addNamed [ 'weak-map', '1.0.5' ]
+296 verbose addNamed [ '1.0.5', '1.0.5' ]
+297 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+298 verbose lock weak-map@1.0.5 /home/pi/.npm/b94c6969-weak-map-1-0-5.lock
+299 silly lockFile d4585d09-op-iterate-pop-iterate-1-0-1-tgz https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+300 verbose lock https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz /home/pi/.npm/d4585d09-op-iterate-pop-iterate-1-0-1-tgz.lock
+301 silly lockFile ef1396d3--org-weak-map-weak-map-1-0-5-tgz https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+302 verbose lock https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz /home/pi/.npm/ef1396d3--org-weak-map-weak-map-1-0-5-tgz.lock
+303 verbose addRemoteTarball [ 'https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz',
+303 verbose addRemoteTarball   'ceacfdab4abf353d7a0f2aaa2c1fc7b3f9413ba3' ]
+304 verbose addRemoteTarball [ 'https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz',
+304 verbose addRemoteTarball   '79691584d98607f5070bd3b70a40e6bb22e401eb' ]
+305 info retry fetch attempt 1 at 07:12:27
+306 verbose fetch to= /tmp/npm-8859-MdSS_idq/registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+307 info retry fetch attempt 1 at 07:12:27
+308 verbose fetch to= /tmp/npm-8859-MdSS_idq/registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+309 http GET https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+310 http GET https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+311 http 200 https://registry.npmjs.org/asap
+312 silly registry.get cb [ 200,
+312 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+312 silly registry.get     etag: '"80D1BRKY8O6X8VA8OEGM35MA9"',
+312 silly registry.get     'content-type': 'application/json',
+312 silly registry.get     'cache-control': 'max-age=300',
+312 silly registry.get     'content-length': '20959',
+312 silly registry.get     'accept-ranges': 'bytes',
+312 silly registry.get     date: 'Mon, 28 Dec 2015 22:12:27 GMT',
+312 silly registry.get     via: '1.1 varnish',
+312 silly registry.get     age: '0',
+312 silly registry.get     connection: 'keep-alive',
+312 silly registry.get     'x-served-by': 'cache-nrt6124-NRT',
+312 silly registry.get     'x-cache': 'HIT',
+312 silly registry.get     'x-cache-hits': '1',
+312 silly registry.get     'x-timer': 'S1451340746.385726,VS0,VE666',
+312 silly registry.get     vary: 'Accept' } ]
+313 silly addNameRange number 2 { name: 'asap', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+314 silly addNameRange versions [ 'asap',
+314 silly addNameRange   [ '0.0.0', '1.0.0', '2.0.0', '2.0.1', '2.0.2', '2.0.3' ] ]
+315 verbose addNamed [ 'asap', '2.0.3' ]
+316 verbose addNamed [ '2.0.3', '2.0.3' ]
+317 silly lockFile 3051b303-asap-2-0-3 asap@2.0.3
+318 verbose lock asap@2.0.3 /home/pi/.npm/3051b303-asap-2-0-3.lock
+319 http 200 https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+320 silly lockFile 3051b303-asap-2-0-3 asap@2.0.3
+321 silly lockFile 3051b303-asap-2-0-3 asap@2.0.3
+322 silly lockFile ca1d64b2-asap-2-0-0 asap@^2.0.0
+323 silly lockFile ca1d64b2-asap-2-0-0 asap@^2.0.0
+324 silly lockFile ef1396d3--org-weak-map-weak-map-1-0-5-tgz https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+325 silly lockFile ef1396d3--org-weak-map-weak-map-1-0-5-tgz https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz
+326 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+327 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+328 silly lockFile 0375db01-weak-map-1-0-5 weak-map@^1.0.5
+329 silly lockFile 0375db01-weak-map-1-0-5 weak-map@^1.0.5
+330 http 200 https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+331 silly lockFile d4585d09-op-iterate-pop-iterate-1-0-1-tgz https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+332 silly lockFile d4585d09-op-iterate-pop-iterate-1-0-1-tgz https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz
+333 silly lockFile 3f1f1063-pop-iterate-1-0-1 pop-iterate@1.0.1
+334 silly lockFile 3f1f1063-pop-iterate-1-0-1 pop-iterate@1.0.1
+335 silly lockFile 2d58c9a8-pop-iterate-1-0-1 pop-iterate@^1.0.1
+336 silly lockFile 2d58c9a8-pop-iterate-1-0-1 pop-iterate@^1.0.1
+337 silly resolved [ { name: 'asap',
+337 silly resolved     version: '2.0.3',
+337 silly resolved     description: 'High-priority task queue for Node.js and browsers',
+337 silly resolved     keywords: [ 'event', 'task', 'queue' ],
+337 silly resolved     license:
+337 silly resolved      { type: 'MIT',
+337 silly resolved        url: 'https://github.com/kriskowal/asap/raw/master/LICENSE.md' },
+337 silly resolved     repository:
+337 silly resolved      { type: 'git',
+337 silly resolved        url: 'git+https://github.com/kriskowal/asap.git' },
+337 silly resolved     main: './asap.js',
+337 silly resolved     browser:
+337 silly resolved      { './asap.js': './browser-asap.js',
+337 silly resolved        './raw.js': './browser-raw.js',
+337 silly resolved        './test/domain.js': './test/browser-domain.js' },
+337 silly resolved     files: [ 'raw.js', 'asap.js', 'browser-raw.js', 'browser-asap.js' ],
+337 silly resolved     scripts:
+337 silly resolved      { test: 'npm run lint && npm run test-node',
+337 silly resolved        'test-travis': 'npm run lint && npm run test-node && npm run test-saucelabs && npm run test-saucelabs-worker',
+337 silly resolved        'test-node': 'node test/asap-test.js',
+337 silly resolved        'test-publish': 'node scripts/publish-bundle.js test/asap-test.js | pbcopy',
+337 silly resolved        'test-browser': 'node scripts/publish-bundle.js test/asap-test.js | xargs opener',
+337 silly resolved        'test-saucelabs': 'node scripts/saucelabs.js test/asap-test.js scripts/saucelabs-spot-configurations.json',
+337 silly resolved        'test-saucelabs-all': 'node scripts/saucelabs.js test/asap-test.js scripts/saucelabs-all-configurations.json',
+337 silly resolved        'test-saucelabs-worker': 'node scripts/saucelabs-worker-test.js scripts/saucelabs-spot-configurations.json',
+337 silly resolved        'test-saucelabs-worker-all': 'node scripts/saucelabs-worker-test.js scripts/saucelabs-all-configurations.json',
+337 silly resolved        lint: 'jshint raw.js asap.js browser-raw.js browser-asap.js $(find scripts -name \'*.js\' | grep -v gauntlet)' },
+337 silly resolved     devDependencies:
+337 silly resolved      { events: '^1.0.1',
+337 silly resolved        jshint: '^2.5.1',
+337 silly resolved        knox: '^0.8.10',
+337 silly resolved        mr: '^2.0.5',
+337 silly resolved        opener: '^1.3.0',
+337 silly resolved        q: '^2.0.3',
+337 silly resolved        'q-io': '^2.0.3',
+337 silly resolved        saucelabs: '^0.1.1',
+337 silly resolved        wd: '^0.2.21',
+337 silly resolved        'weak-map': '^1.0.5' },
+337 silly resolved     gitHead: 'ccbf94d4e4a0c3afc2df13331044020a46a74ab6',
+337 silly resolved     bugs: { url: 'https://github.com/kriskowal/asap/issues' },
+337 silly resolved     homepage: 'https://github.com/kriskowal/asap#readme',
+337 silly resolved     _id: 'asap@2.0.3',
+337 silly resolved     _shasum: '1fc1d1564ee11620dfca6d67029850913f9f4679',
+337 silly resolved     _from: 'asap@^2.0.0',
+337 silly resolved     _npmVersion: '2.8.3',
+337 silly resolved     _nodeVersion: '1.8.1',
+337 silly resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+337 silly resolved     maintainers: [ [Object], [Object] ],
+337 silly resolved     dist:
+337 silly resolved      { shasum: '1fc1d1564ee11620dfca6d67029850913f9f4679',
+337 silly resolved        tarball: 'http://registry.npmjs.org/asap/-/asap-2.0.3.tgz' },
+337 silly resolved     directories: {},
+337 silly resolved     _resolved: 'https://registry.npmjs.org/asap/-/asap-2.0.3.tgz',
+337 silly resolved     readme: 'ERROR: No README data found!' },
+337 silly resolved   { name: 'weak-map',
+337 silly resolved     version: '1.0.5',
+337 silly resolved     description: 'A WeakMap shim for Node.js and browsers',
+337 silly resolved     main: 'weak-map.js',
+337 silly resolved     repository: { type: 'git', url: 'git://github.com/drses/weak-map.git' },
+337 silly resolved     keywords: [ 'weakmap', 'weak-map', 'weak', 'map', 'collections', 'es6' ],
+337 silly resolved     author: { name: 'Mark Miller', email: 'erights@gmail.com' },
+337 silly resolved     maintainer: 'Kris Kowal <kris@cixar.com>',
+337 silly resolved     license: 'Apache 2.0',
+337 silly resolved     bugs: { url: 'https://github.com/drses/weak-map/issues' },
+337 silly resolved     files: [ 'weak-map.js' ],
+337 silly resolved     scripts:
+337 silly resolved      { test: 'npm run test:native; npm run test:shim',
+337 silly resolved        'test:phantom': '',
+337 silly resolved        'test:shim': 'node test/index.js',
+337 silly resolved        'test:native': 'node --harmony_collections test/index.js' },
+337 silly resolved     devDependencies: { jasminum: '^2.0.1' },
+337 silly resolved     homepage: 'https://github.com/drses/weak-map',
+337 silly resolved     _id: 'weak-map@1.0.5',
+337 silly resolved     dist:
+337 silly resolved      { shasum: '79691584d98607f5070bd3b70a40e6bb22e401eb',
+337 silly resolved        tarball: 'http://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz' },
+337 silly resolved     _from: 'weak-map@^1.0.5',
+337 silly resolved     _npmVersion: '1.4.3',
+337 silly resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+337 silly resolved     maintainers: [ [Object] ],
+337 silly resolved     directories: {},
+337 silly resolved     _shasum: '79691584d98607f5070bd3b70a40e6bb22e401eb',
+337 silly resolved     _resolved: 'https://registry.npmjs.org/weak-map/-/weak-map-1.0.5.tgz' },
+337 silly resolved   { name: 'pop-iterate',
+337 silly resolved     version: '1.0.1',
+337 silly resolved     description: 'A polymorphic iterate operator for arrays and other iterables',
+337 silly resolved     main: 'pop-iterate.js',
+337 silly resolved     directories: { test: 'test' },
+337 silly resolved     devDependencies: { jasminum: '^2.0.5' },
+337 silly resolved     scripts: { test: 'jasminum test' },
+337 silly resolved     repository:
+337 silly resolved      { type: 'git',
+337 silly resolved        url: 'https://github.com/kriskowal/pop-iterate.git' },
+337 silly resolved     keywords: [ 'pop', 'polymorphic', 'operator', 'iterate' ],
+337 silly resolved     author: { name: 'Kris Kowal', email: 'kris@cixar.com' },
+337 silly resolved     license: 'MIT',
+337 silly resolved     bugs: { url: 'https://github.com/kriskowal/pop-iterate/issues' },
+337 silly resolved     homepage: 'https://github.com/kriskowal/pop-iterate',
+337 silly resolved     gitHead: 'dc8f214537d6134d25a6da84ca78715bfbcd0001',
+337 silly resolved     _id: 'pop-iterate@1.0.1',
+337 silly resolved     _shasum: 'ceacfdab4abf353d7a0f2aaa2c1fc7b3f9413ba3',
+337 silly resolved     _from: 'pop-iterate@^1.0.1',
+337 silly resolved     _npmVersion: '1.4.21',
+337 silly resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+337 silly resolved     maintainers: [ [Object] ],
+337 silly resolved     dist:
+337 silly resolved      { shasum: 'ceacfdab4abf353d7a0f2aaa2c1fc7b3f9413ba3',
+337 silly resolved        tarball: 'http://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz' },
+337 silly resolved     _resolved: 'https://registry.npmjs.org/pop-iterate/-/pop-iterate-1.0.1.tgz' } ]
+338 info install asap@2.0.3 into /home/pi/Node/node_modules/system/node_modules/q
+339 info install weak-map@1.0.5 into /home/pi/Node/node_modules/system/node_modules/q
+340 info install pop-iterate@1.0.1 into /home/pi/Node/node_modules/system/node_modules/q
+341 info installOne asap@2.0.3
+342 info installOne weak-map@1.0.5
+343 info installOne pop-iterate@1.0.1
+344 verbose node_modules/system/node_modules/q/node_modules/asap unbuild
+345 verbose tar unpack /home/pi/.npm/asap/2.0.3/package.tgz
+346 silly lockFile 9375c0ff-node-modules-q-node-modules-asap tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/asap
+347 verbose lock tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/asap /home/pi/.npm/9375c0ff-node-modules-q-node-modules-asap.lock
+348 silly lockFile bdd304d1-me-pi-npm-asap-2-0-3-package-tgz tar:///home/pi/.npm/asap/2.0.3/package.tgz
+349 verbose lock tar:///home/pi/.npm/asap/2.0.3/package.tgz /home/pi/.npm/bdd304d1-me-pi-npm-asap-2-0-3-package-tgz.lock
+350 verbose node_modules/system/node_modules/q/node_modules/weak-map unbuild
+351 verbose node_modules/system/node_modules/q/node_modules/pop-iterate unbuild
+352 silly gunzTarPerm modes [ '755', '644' ]
+353 verbose tar unpack /home/pi/.npm/weak-map/1.0.5/package.tgz
+354 silly lockFile e2abaa72--modules-q-node-modules-weak-map tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/weak-map
+355 verbose lock tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/weak-map /home/pi/.npm/e2abaa72--modules-q-node-modules-weak-map.lock
+356 silly lockFile 52fc9b75-i-npm-weak-map-1-0-5-package-tgz tar:///home/pi/.npm/weak-map/1.0.5/package.tgz
+357 verbose lock tar:///home/pi/.npm/weak-map/1.0.5/package.tgz /home/pi/.npm/52fc9b75-i-npm-weak-map-1-0-5-package-tgz.lock
+358 verbose tar unpack /home/pi/.npm/pop-iterate/1.0.1/package.tgz
+359 silly lockFile 5779c8e3-dules-q-node-modules-pop-iterate tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/pop-iterate
+360 verbose lock tar:///home/pi/Node/node_modules/system/node_modules/q/node_modules/pop-iterate /home/pi/.npm/5779c8e3-dules-q-node-modules-pop-iterate.lock
+361 silly lockFile 749ddd5e-pm-pop-iterate-1-0-1-package-tgz tar:///home/pi/.npm/pop-iterate/1.0.1/package.tgz
+362 verbose lock tar:///home/pi/.npm/pop-iterate/1.0.1/package.tgz /home/pi/.npm/749ddd5e-pm-pop-iterate-1-0-1-package-tgz.lock
+363 silly gunzTarPerm modes [ '755', '644' ]
+364 silly gunzTarPerm extractEntry package.json
+365 silly gunzTarPerm modes [ '755', '644' ]
+366 silly gunzTarPerm extractEntry package.json
+367 silly gunzTarPerm extractEntry README.md
+368 silly gunzTarPerm extractEntry asap.js
+369 silly gunzTarPerm extractEntry package.json
+370 silly gunzTarPerm extractEntry README.md
+371 silly gunzTarPerm extractEntry weak-map.js
+372 error nospc ENOSPC, open '/home/pi/Node/node_modules/system/node_modules/q/node_modules/asap/README.md'
+372 error nospc This is most likely not a problem with npm itself
+372 error nospc and is related to insufficient space on your system.
+373 error System Linux 3.10.17-poky-edison+
+374 error command "node" "/usr/bin/npm" "install" "system"
+375 error cwd /home/pi/Node/TEST
+376 error node -v v0.10.38
+377 error npm -v 1.4.28
+378 error path /home/pi/Node/node_modules/system/node_modules/q/node_modules/asap/README.md
+379 error code ENOSPC
+380 error errno 54
+381 verbose exit [ 54, true ]

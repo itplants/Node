@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Coder</title>
+    <meta charset="utf-8">
+    <!-- Standard Coder Includes -->
+    <script>
+        var appname = "{{app_name}}"; //app name (id) of this app
+        var appurl = "{{&app_url}}";
+        var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
+    </script>
+    <link href="/static/apps/coderlib/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="/static/common/js/jquery.min.js"></script>
+    <script src="/static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/apps/coderlib/js/index.js"></script>
+    <script>
+        Coder.addBasicNav();
+    </script>
+    <!-- End Coder Includes -->
+
+    <!-- This app's includes -->
+    <link href="{{&static_url}}/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="{{&static_url}}/js/index.js"></script>
+    <!-- End apps includes -->
+</head>
+<body class="">
+    <div class="pagecontent">
+        <h1>INDEX</h1>
+	<p>httpd 		<a href="http://edison.local:80">http://edison.local</a></p>
+	<p>device 		<a href="http://edison.local:88">http://edison.local:88</a></p>
+	<p>coder 		<a href=https://edison.local:9091>http://edison.local:9091 PW: Raspberry1</a></p>
+	<p>mjpeg-streamer 	<a href=http://edison.local:8080>http://edison.local:8080</a></p>
+	<p>dataCapture 		<a href=http://edison.local/dataCapture>http://edison.local/dataCapture</a></p>
+	<p>spectrum 		<a href=http://edison.local/dataServer>http://edison.local/dataServer</a></p>
+	<p>tty 			<a href=http://edison.local:8095/index.html>http://edison.local:8095/index.html</a></p>
+	<p>Document 		<a href=http://blog.itplants.com/?page_id=1645>http://blog.itplants.com/?page_id=1645</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+#!/bin/sh
+
+
+resFile="/home/coder/coder-dist/coder-base/resources/airconctl.res"
+
+# read command from file
+cmd=""
+data=""
+
+while read line; do
+    cmd+=(`echo $line|awk '{print $1}'`)
+    data+=(`echo $line|awk '{print $2}'`)
+done < $resFile
+
+#echo ${cmd[@]}
+
+#echo $#
+if [ $# -ne 1 ] ;
+then
+	echo "IRKitCmd"
+	echo "Select one command from command list"
+	echo ${cmd[@]} 
+	exit 1
+fi
+
+# search keyword data
+c=""
+for i in `seq 0 ${#cmd[*]}`
+do
+	if [  "$1" = "${cmd[ i ]}"  ] ; 
+	then
+	#echo "found " $1 ${cmd[i]}
+	c=${data[i]}
+	break
+	fi
+done
+#  echo ${c}
+
+# send data
+IP="irkit4d46.local"
+/usr/bin/curl -s -i "http://$IP/messages" -d $c  
+
+t=`date +"%T"`
+echo $t "!!!! IRKitcmd done " $1 
+echo $t "!!!! IRKitcmd done " $1 >> /home/pi/Node/AirConCtl/log/airconctl.log
